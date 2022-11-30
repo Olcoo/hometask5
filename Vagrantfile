@@ -69,6 +69,6 @@ Vagrant.configure("2") do |config|
     chmod +x /usr/bin/app.sh
     systemctl daemon-reload
     systemctl start filemover
-    
+    systemctl enable filemover.service
   SHELL
 end
